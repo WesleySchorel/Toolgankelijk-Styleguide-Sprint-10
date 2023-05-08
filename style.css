@@ -433,4 +433,180 @@ button{
     outline: var(--blauw);
 }
 
-  
+
+/* KLEUREN */
+
+.kleuren-uitleg {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#hoofdkleur {
+  margin-bottom: 2rem;
+}
+
+#contrastkleuren .kleurblokken {}
+
+.intro {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0;
+  max-width: 100%;
+}
+
+
+p {
+  font-size: 1rem;
+  margin: 0;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  max-width: 100%;
+}
+
+.intro h2,
+.intro p {
+  margin: 0;
+}
+
+.kleurblokken {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  gap: 2rem;
+}
+
+.kleurblok {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.kleurblok h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.kleurblok p {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin: 0;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.kleurblok p:hover {
+  transform: scale(1.01);
+}
+
+.kleurblok p:active {
+  transform: scale(.98);
+}
+
+#geel .kleurblok {
+  background-color: #FFD05F;
+}
+
+#blauw .kleurblok {
+  background-color: #46BECD;
+}
+
+#groen .kleurblok {
+  background-color: #25AE93;
+}
+
+#donkerblauw .kleurblok {
+  background-color: #606EB3;
+}
+
+#eggplant .kleurblok {
+  background-color: #6A4955;
+}
+
+#coldturkey .kleurblok {
+  background-color: #C9B5B2;
+}
+
+#tundora .kleurblok {
+  background-color: #444444;
+}
+
+#alto .kleurblok {
+  background-color: #DDDDDD;
+}
+
+#magenta {
+  width: 20rem;
+}
+
+#gradient-magenta .kleurblok {
+  background: linear-gradient(to right, #B9005F, #E30059);
+}
+
+#magenta .kleurblok {
+  background-color: #B9005F;
+}
+
+.kleurblok {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: .5rem;
+}
+
+.item.groot {
+  flex-grow: 1;
+}
+
+.item h3 {
+  color: #444;
+  margin: 0;
+}
+
+.kleurhex {
+  color: white;
+  font-weight: bold;
+}
+
+.more-info {
+  margin-left: auto;
+  height: .5rem;
+}
+
+.folder {
+  padding: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+  .item,
+  #magenta {
+      width: 100%;
+  }
+
+  .folder {
+      padding: 2rem;
+  }
+
+  .kleurblok h4 {
+      color: #ffff;
+  }
+}
