@@ -490,6 +490,7 @@ h2 {
   flex-direction: column;
   justify-content: left;
   gap: 1rem;
+  text-indent: 10px;
 }
 
 .kleurblok h4 {
