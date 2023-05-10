@@ -595,6 +595,14 @@ h2 {
   padding: 2rem;
 }
 
+.logo-logo {
+  width: 20em;
+}
+
+.pixels-logo {
+  width: 120px;
+}
+
 
 @media (max-width: 768px) {
 
