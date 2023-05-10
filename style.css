@@ -603,6 +603,15 @@ h2 {
   width: 120px;
 }
 
+.favicon-iconen {
+  width: 4em;
+}
+
+.globe-iconen {
+  filter: invert(48%) saturate(10%) hue-rotate(86deg) brightness(10%) contrast(119%);
+  width: 3em;
+}
+
 
 @media (max-width: 768px) {
 
