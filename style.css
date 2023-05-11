@@ -1,62 +1,6 @@
 :root {
     --c-pink: #E30059;
     --white: #fff;
-    --grey: #f5f5f5;
-    --back: #222;
-    --card: #D5EDEE;
-    --wit: #FFF;
-    --geel: #FFD05F;
-    --cyaan: #46BECD;
-    --turkoois: #25AE93;
-    --blauw: #606EB3;
-    --bruin: #6A4955;
-    --zand: #C9B5B2;
-    --grijs: #444444;
-    --licht-grijs: #DDDDDD;
-    --licht-zwart: #525151;
-    --border: 2px solid var(--grijs);
-    --gradient-color-magenta: linear-gradient(332deg, #B9005F 0%, #E30059 100%);
-    --magenta: #B9005F;
-    --light-magenta: #E30059;
-    --dark-magenta: #800041;
-
-    --button-padding: 0.8em 1.6em;
-    --button-border-radius: 0.3em;
-  }  
-  
-  * {
-    margin: 0;
-    padding: 0;
-    line-height: 28px;
-    box-sizing: border-box;
-    font-family: montserrat, sans-serif, Helvetica;
-  } 
-  
-  .container {
-    position: relative;
-    width: 100%;
-  }  
-
-  
-  nav {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background: var(--c-pink);
-    border-left: 10px solid var(--c-pink);
-    transition: 0.5s;
-    overflow: hidden;
-  } 
-  
-  nav.active {
-    width: 80px;
-  } 
-  
-  nav ul {
-    position: absolute;
-    top: -73px;
-    left: 0;
-    width: 100%;
     margin-top: 6rem;
   } 
   
@@ -191,7 +135,6 @@
   }
   
   .header-2-syleguide {
-    font-size: 32px;
     font-family: "Fira Sans Medium";
     font-weight: inherit;
     letter-spacing: -0.02em;
