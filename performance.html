@@ -72,32 +72,20 @@
   </nav>
     
     <main>
-    <h1>Logo</h1> 
-    <p>Vervoerregio Amsterdam</p>
+    <h1>Performance</h1> 
+    <p>Performance Matters.</p>
 
     <section class="folder">
-        <p>Een logo helpt de gebruikers om jouw merk te identificeren wanneer ze je diensten gebruiken. Dit moet goed leesbaar zijn.</p>
-        <img src="assets/logovr.png" class="logo-logo" alt="">
-        <p>Hierboven staat het logo van Vervoerregio Amsterdam, Hierin bestaan 2 versies het logo met de tekst rechts en het logo alleen. Dit zijn hier dan de enige 2 versies die je kunt gebruiken.</p>
-        <br>
+        <p>Houdt rekening met de performance van de website door enkele technieken toe te passen.</p>
     </section>
 
-    <h2>Gebruik van Logo</h2>
+    <h2>Gebruik van Technieken</h2>
     <section class="folder">
         <ul>
-            <li>
-                <p>Een herkenbaar punt uit dit logo is de roze kleur, die moet dan ook altijd te zien zijn.</p>
-             </li>
-            <li>
-                <p>Het logo is in het font FireSans Medium. </p>
-            </li>
-            <li>
-                <p>Het Logo moet altijd goed zichtbaar zijn boven in de zoekbalk van de website.</p>
-            </li>
-            <li>
-                <p>het logo moet minstens 120 pixels breed kunnen zijn zoals hieronder zodat je het goed kunt zien.</p>
-                <img src="assets/logovr.png" class="pixels-logo" alt="">
-            </li>
+            <li>Progressive Enchancement</li>
+            <li>Responsive Images</li>
+            <li>Lazy loading</li>
+            <li>Layout shifts</li>
         </ul>
     </section>
 
@@ -105,16 +93,41 @@
     <section class="folder">
         <ul>
             <li>
-                Het logo mag nooit een andere kleur hebben dan de standaard roze.
+                We willen dat schermen met een hoge resolutie afbeeldingen krijgen, maar we willen die afbeeldingen niet naar gebruikers sturen die al die extra pixels niet zien.
             </li>
             <li>
-                Het logo moet groot genoeg zijn dat je het kunt lezen (ongeveer 120 pixels).
-            </li>
-            <li>
-                Het logo moet gebruikt worden als favicon
+                Een zichtbaar element op de site mag niet de positie of grootte veranderen waardoor de positie van de inhoud eromheen beïnvloedt zou worden.
             </li>
         </ul>
     </section>
+
+    <h2>Code voorbeelden</h2>
+    <section class="folder">
+        <p>Een voorbeeld van Lazy Loading</p>
+        <pre>
+<code>
+// Lazy Loading
+&ltimg id="uitleg-container-wide-img" src="/assets/wettelijk.png" loading="lazy" alt="Foto over de wettelijke achtergrond"&gt</code>
+        </pre>
+    </section>
+
+    <section class="folder">
+        <p>Een voorbeeld van Lazy Loading</p>
+        <pre>
+<code>
+// Responsive Images
+            &ltpicture id="uitleg-container-wide-img"> 
+            &ltsource media="(min-width: 69em)" 
+                    srcset="/assets/wettelijk-small.png 320w, 
+                    /assets/wettelijk-medium.png 640w, 
+                    /assets/wettelijk.png 1024w"/&gt
+                    &ltsource srcset="/assets/wettelijk-small-crop.png 2x,
+                /assets/wettelijk-small-crop.png 1x" /&gt
+                &ltimg id="wide-img" src="/assets/wettelijk.png" 
+                alt="Beeldje van wettelijkheid"/>
+                &lt/picture&gt&gt</code>
+        </pre> 
+        </section>
     </main>
 
 </html>
