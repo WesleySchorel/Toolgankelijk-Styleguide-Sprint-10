@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,69 +11,69 @@
 
 <nav>
     <div class="container">
-    <ul>
-      
-    <!--Vervoerregio Amsterdam -->
-    <li class="list">
-    <a href="index.html">
-    <span class="title">Vervoerregio</span>
-    </a>
-    </li>
-    
-    <!-- Logo -->
-    <li class="list">
-    <a href="logo.html">
-    <span class="title">Logo</span>
-    </a>
-    </li>
-    
-    
-    <!-- Formulieren -->
-    <li class="list">
-    <a href="Typografie.html">
-    <span class="title">Typografie</span>
-    </a>
-    </li>
-    
-    <!-- Buttons -->
-    <li class="list">
-    <a href="buttons.html">
-    <span class="title">Buttons</span>
-    </a>
-    </li>
-    
-    <!-- Iconen -->
-    <li class="list">
-    <a href="iconen.html">
-    <span class="title">Iconen</span>
-    </a>
-    </li>
-    
-    <!-- Kleuren -->
-    <li class="list">
-    <a href="kleuren.html">
-    <span class="title">Kleuren</span>
-    </a>
-    </li>
-  
-    <!-- Formulieren -->
-    <li class="list">
-    <a href="formulieren.html">
-    <span class="title">Formulieren</span>
-    </a>
-    </li>
+        <ul>
 
-    <!-- Performance -->
-    <li class="list">
-        <a href="performance.html">
-        <span class="title">Performance</span>
-        </a>
-        </li>
-  </ul>
-  </nav>
-    
-    <main>
-    <h1>Performance</h1> 
+            <!--Vervoerregio Amsterdam -->
+            <li class="list">
+                <a href="index.html">
+                    <span class="title">Vervoerregio</span>
+                </a>
+            </li>
+
+            <!-- Logo -->
+            <li class="list">
+                <a href="logo.html">
+                    <span class="title">Logo</span>
+                </a>
+            </li>
+
+
+            <!-- Formulieren -->
+            <li class="list">
+                <a href="Typografie.html">
+                    <span class="title">Typografie</span>
+                </a>
+            </li>
+
+            <!-- Buttons -->
+            <li class="list">
+                <a href="buttons.html">
+                    <span class="title">Buttons</span>
+                </a>
+            </li>
+
+            <!-- Iconen -->
+            <li class="list">
+                <a href="iconen.html">
+                    <span class="title">Iconen</span>
+                </a>
+            </li>
+
+            <!-- Kleuren -->
+            <li class="list">
+                <a href="kleuren.html">
+                    <span class="title">Kleuren</span>
+                </a>
+            </li>
+
+            <!-- Formulieren -->
+            <li class="list">
+                <a href="formulieren.html">
+                    <span class="title">Formulieren</span>
+                </a>
+            </li>
+
+            <!-- Performance -->
+            <li class="list">
+                <a href="performance.html">
+                    <span class="title">Performance</span>
+                </a>
+            </li>
+        </ul>
+</nav>
+
+<main>
+    <h1>Performance</h1>
     <p>Performance Matters.</p>
 
     <section class="folder">
@@ -93,41 +94,41 @@
     <section class="folder">
         <ul>
             <li>
-                We willen dat schermen met een hoge resolutie afbeeldingen krijgen, maar we willen die afbeeldingen niet naar gebruikers sturen die al die extra pixels niet zien.
+                We willen dat schermen met een hoge resolutie afbeeldingen krijgen, maar we willen die afbeeldingen niet
+                naar gebruikers sturen die al die extra pixels niet zien.
             </li>
             <li>
-                Een zichtbaar element op de site mag niet de positie of grootte veranderen waardoor de positie van de inhoud eromheen beïnvloedt zou worden.
+                Een zichtbaar element op de site mag niet de positie of grootte veranderen waardoor de positie van de
+                inhoud eromheen beïnvloedt zou worden.
             </li>
         </ul>
     </section>
 
     <h2>Code voorbeelden</h2>
     <section class="folder">
-        <p>Een voorbeeld van Lazy Loading</p>
-        <pre>
-<code>
-// Lazy Loading
-&ltimg id="uitleg-container-wide-img" src="/assets/wettelijk.png" loading="lazy" alt="Foto over de wettelijke achtergrond"&gt</code>
-        </pre>
+        <h3>Lazy Loading</h3>
+        <span>Loading is een attribuut waarmee wij ervoor kunnen zorgen dat bepaalde foto's die bij loading="lazy" hebben, alleen worden ingeladen wanneer zij te zien zijn voor de gebruiker. Hiermme kunnen we ervoor zorgen dat niet alles van de pagina meteen wordt ingeladen waardoor de pagespeed en de algemene performance van de website wordt verbetert.</span>
+        <p class="voorbeeld">Een voorbeeld van Lazy Loading</p>
+<pre><code>&ltimg id="uitleg-container-wide-img" src="/assets/wettelijk.png" loading="lazy" alt="Foto over de wettelijke achtergrond"&gt</code></pre>
     </section>
 
     <section class="folder">
-        <p>Een voorbeeld van Lazy Loading</p>
-        <pre>
-<code>
-// Responsive Images
-            &ltpicture id="uitleg-container-wide-img"> 
-            &ltsource media="(min-width: 69em)" 
-                    srcset="/assets/wettelijk-small.png 320w, 
-                    /assets/wettelijk-medium.png 640w, 
-                    /assets/wettelijk.png 1024w"/&gt
-                    &ltsource srcset="/assets/wettelijk-small-crop.png 2x,
-                /assets/wettelijk-small-crop.png 1x" /&gt
-                &ltimg id="wide-img" src="/assets/wettelijk.png" 
-                alt="Beeldje van wettelijkheid"/>
-                &lt/picture&gt&gt</code>
-        </pre> 
+        <h3>Responsive images</h3>
+        <span>Responsive images is een manier waarmee je verschillende formaten of versies van een bepaalde foto kan inladen afhankelijk van de viewport width. Door middel van responsive images hebben wij ervoor gezorgd dat op kleinere schermen een cropped image op de plaats komt van de originele image aangezien de originele foto toch niet helemaal te zien is op mobiele versies. Door deze toepassingen wordt op mobiel de kleinere fotos ingeladen waardoor de performance daarop wordt verbetert.</span>
+        <p class="voorbeeld">Een voorbeeld van responsive images</p>
+<pre><code>&ltpicture id="uitleg-container-wide-img"> 
+    &ltsource media="(min-width: 69em)" 
+        srcset="/assets/wettelijk-small.png 320w, 
+        /assets/wettelijk-medium.png 640w, 
+        /assets/wettelijk.png 1024w"/&gt
+    &ltsource srcset="/assets/wettelijk-small-crop.png 2x,
+        /assets/wettelijk-small-crop.png 1x" /&gt
+        &ltimg id="wide-img" src="/assets/wettelijk.png" 
+        alt="Beeldje van wettelijkheid"/>
+&lt/picture&gt&gt
+</pre>
+</code>   
         </section>
-    </main>
+</main>
 
 </html>
